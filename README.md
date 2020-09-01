@@ -10,6 +10,13 @@ yarn install
 yarn dev
 ```
 
+```js
+var sqlText = $('#sqlText').val();
+var result = window.SqlParser.parse(sqlText);
+                
+```
+
+
 ```
 // 构建支持浏览器环境的代码文件，浏览器端直接引用构建出来的 browser/sql-parser.min.js 文件即可，browser/demo.html 为调用示例
 yarn browser
